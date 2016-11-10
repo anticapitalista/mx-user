@@ -22,6 +22,7 @@
 
 //#include <QDebug>
 
+
 MConfig::MConfig(QWidget* parent) : QDialog(parent) {
     setupUi(this);
     setWindowIcon(QApplication::windowIcon());
@@ -127,6 +128,7 @@ bool MConfig::replaceStringInFile(QString oldtext, QString newtext, QString file
     }
     return true;
 }
+
 
 /////////////////////////////////////////////////////////////////////////
 // common
@@ -407,8 +409,7 @@ void MConfig::applyRestore() {
         cmd = QString("rm -rf %1").arg(path);
         system(cmd.toUtf8());
         // localize repos
-        cmd = QString("localize-repo $(cat /etc/timezone)").arg(path);
-        system(cmd.toUtf8());
+        system("localize-repo $(cat /etc/timezone)");
     }
     if (radioAutologinNo->isChecked()) {
         cmd = QString("sed -i -r '/^autologin-user=%1/ s/^/#/' /etc/lightdm/lightdm.conf").arg(user);
@@ -437,7 +438,7 @@ void MConfig::applyRestore() {
         QMessageBox::information(0, tr("Xfce settings"),
                                  tr(" Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     }
-    if (radioHorizontalPanel->isChecked()) {        
+    if (radioHorizontalPanel->isChecked()) {
         // backup panel config
         cmd = QString("runuser %1 -c 'mkdir -p ~/.restore/.config/xfce4'").arg(user);
         system(cmd.toUtf8());
@@ -455,9 +456,7 @@ void MConfig::applyRestore() {
         // change ownership
         cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
         system(cmd.toUtf8());
-        // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
-        system(cmd.toUtf8());
+        restartPanel(user);
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
 
@@ -480,8 +479,7 @@ void MConfig::applyRestore() {
         cmd = QString("chown -R %1:%1 /home/%1/.config/xfce4/xfconf /home/%1/.config/xfce4/panel").arg(user);
         system(cmd.toUtf8());
         // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
-        system(cmd.toUtf8());
+        restartPanel(user);
         QMessageBox::information(0, tr("Panel settings"),
                                  tr(" Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)"));
     } else if (radioRestoreBackup->isChecked()) {
@@ -489,9 +487,7 @@ void MConfig::applyRestore() {
         system(cmd.toUtf8());
         cmd = QString("runuser %1 -c 'cp ~/.restore/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml'").arg(user);
         system(cmd.toUtf8());
-        // restart panel
-        cmd = QString("pkill xfconfd; runuser %1 -c 'xfce4-panel -r'").arg(user);
-        system(cmd.toUtf8());
+        restartPanel(user);
     }
 
     setCursor(QCursor(Qt::ArrowCursor));
@@ -1070,21 +1066,25 @@ QString MConfig::getVersion(QString name) {
 
 // show about
 void MConfig::on_buttonAbout_clicked() {
+    this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX User Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX User Manager") + "</h2></b></p><p align=\"center\">" + "Version: " +
                        getVersion("mx-user") + "</p><p align=\"center\"><h3>" +
-                       tr("Simple user configuration for antiX MX") + "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) antiX") + "<br /><br /></p>", 0, this);
+                       tr("Simple user configuration for MX Linux") + "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::RejectRole);
     if (msgBox.exec() == QMessageBox::AcceptRole)
         system("mx-viewer file:///usr/share/doc/mx-user/license.html '" + tr("MX User Manager").toUtf8() + " " + tr("License").toUtf8() + "'");
+    this->show();
 }
 
 // Help button clicked
 void MConfig::on_buttonHelp_clicked() {
-    system("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-user-manager '" + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8() + "'");
+    this->hide();
+    system("mx-viewer https://mxlinux.org/wiki/help-files/help-mx-user-manager '" + tr("MX User Manager").toUtf8() + " " + tr("Help").toUtf8() + "'");
+    this->show();
 }
 
 
@@ -1100,15 +1100,22 @@ void MConfig::on_radioVerticalPanel_clicked()
 
 void MConfig::on_checkXfce_clicked(bool checked)
 {
-    if (checked) {        
+    if (checked) {
         groupPanel->setDisabled(true);
         radioHorizontalPanel->setAutoExclusive(false);
         radioHorizontalPanel->setChecked(false);
         radioHorizontalPanel->setAutoExclusive(true);
         radioVerticalPanel->setAutoExclusive(false);
-        radioVerticalPanel->setChecked(false);                
+        radioVerticalPanel->setChecked(false);
         radioVerticalPanel->setAutoExclusive(true);
     } else {
         groupPanel->setDisabled(false);
     }
 }
+
+void MConfig::restartPanel(QString user)
+{
+    QString cmd = QString("pkill xfconfd; sudo -Eu %1 bash -c 'xfce4-panel -r'").arg(user);
+    system(cmd.toUtf8());
+}
+

@@ -14,15 +14,15 @@
 //   limitations under the License.
 //
 
-#include <qapplication.h>
-#include <qtranslator.h>
-#include <qlocale.h>
+#include <QApplication>
+#include <QTranslator>
+#include <QLocale>
 #include "mconfig.h"
 #include <unistd.h>
 
 int main( int argc, char ** argv ) {
     QApplication app(argc, argv);
-    app.setWindowIcon(QIcon("/usr/share/pixmaps/mx/mx-user.png"));
+    app.setWindowIcon(QIcon("/usr/share/pixmaps/mx-user.png"));
 
     QTranslator qtTran;
     qtTran.load(QString("qt_") + QLocale::system().name());

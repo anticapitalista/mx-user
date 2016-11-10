@@ -1,3 +1,27 @@
+mx-user (16.10mx16) mx; urgency=medium
+
+  * changed URLs
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 10 Oct 2016 14:46:48 -0400
+
+mx-user (16.5mx15) mx; urgency=medium
+
+  * new desktop file
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Mon, 23 May 2016 07:11:13 -0400
+
+mx-user (15.12.1mx15) mx; urgency=medium
+
+  * hide GUI when displaying help/license
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 22 Dec 2015 19:01:39 -0500
+
+mx-user (15.12mx15) mx; urgency=medium
+
+  * fixed restarting xfce4-panel, new translations
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 01 Dec 2015 08:26:10 -0500
+
 mx-user (15.10.4mx15) mx; urgency=medium
 
   * new translations

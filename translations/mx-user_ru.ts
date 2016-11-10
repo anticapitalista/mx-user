@@ -8,6 +8,7 @@
 <context>
     <name>MConfig</name>
     <message>
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="183"/>
 <<<<<<< HEAD
         <location filename="../mconfig.cpp" line="243"/>
@@ -32,20 +33,38 @@
         <location filename="../mconfig.cpp" line="902"/>
         <location filename="../mconfig.cpp" line="909"/>
 >>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="185"/>
+        <location filename="../mconfig.cpp" line="261"/>
+        <location filename="../mconfig.cpp" line="293"/>
+        <location filename="../mconfig.cpp" line="319"/>
+        <location filename="../mconfig.cpp" line="341"/>
+        <location filename="../mconfig.cpp" line="364"/>
+        <location filename="../mconfig.cpp" line="837"/>
+        <location filename="../mconfig.cpp" line="866"/>
+        <location filename="../mconfig.cpp" line="890"/>
+        <location filename="../mconfig.cpp" line="898"/>
+        <location filename="../mconfig.cpp" line="905"/>
+>>>>>>> upstream/master
         <source>none</source>
         <translation>ни один</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="356"/>
 =======
         <location filename="../mconfig.cpp" line="374"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="376"/>
 >>>>>>> upstream/master
         <source>The user configuration will be repaired. Please close all other applications now. When finished, please logout or reboot. Are you sure you want to repair now?</source>
         <translation>Конфигурация пользователя будет восстановлена. Пожалуйста, закройте сейчас все другие приложения. Когда закончите, пожалуйста, сделайте выход из сеанса или перезагрузку. Вы уверены, что хотите восстановить конфигурацию?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="357"/>
         <location filename="../mconfig.cpp" line="431"/>
         <location filename="../mconfig.cpp" line="539"/>
@@ -57,12 +76,20 @@
         <location filename="../mconfig.cpp" line="619"/>
         <location filename="../mconfig.cpp" line="674"/>
         <location filename="../mconfig.cpp" line="701"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="377"/>
+        <location filename="../mconfig.cpp" line="507"/>
+        <location filename="../mconfig.cpp" line="615"/>
+        <location filename="../mconfig.cpp" line="670"/>
+        <location filename="../mconfig.cpp" line="697"/>
 >>>>>>> upstream/master
         <source>Yes</source>
         <translation>Да</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="357"/>
         <location filename="../mconfig.cpp" line="431"/>
         <location filename="../mconfig.cpp" line="539"/>
@@ -75,101 +102,146 @@
         <location filename="../mconfig.cpp" line="674"/>
         <location filename="../mconfig.cpp" line="701"/>
 >>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="377"/>
+        <location filename="../mconfig.cpp" line="507"/>
+        <location filename="../mconfig.cpp" line="615"/>
+        <location filename="../mconfig.cpp" line="670"/>
+        <location filename="../mconfig.cpp" line="697"/>
+>>>>>>> upstream/master
         <source>No</source>
         <translation>Нет</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="414"/>
 =======
         <location filename="../mconfig.cpp" line="416"/>
         <location filename="../mconfig.cpp" line="427"/>
+=======
+        <location filename="../mconfig.cpp" line="417"/>
+        <location filename="../mconfig.cpp" line="428"/>
+>>>>>>> upstream/master
         <source>Autologin options</source>
         <translation>Опции автоматического входа</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="417"/>
+        <location filename="../mconfig.cpp" line="418"/>
         <source>Autologin has been disabled for the &apos;%1&apos; account.</source>
         <translation>Автовход был отключен для пользователя &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="428"/>
+        <location filename="../mconfig.cpp" line="429"/>
         <source>Autologin has been enabled for the &apos;%1&apos; account.</source>
         <translation>Автовход был включен для пользователя &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="437"/>
+        <location filename="../mconfig.cpp" line="438"/>
         <source>Xfce settings</source>
         <translation>Настройки Xfce</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="438"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="439"/>
 >>>>>>> upstream/master
         <source> Your current Xfce settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
         <translation> Копия Ваших текущих настроек Xfce была сохранена в скрытой папке  .restore в Вашей домашней папке (~/.restore/)</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="426"/>
 =======
         <location filename="../mconfig.cpp" line="461"/>
         <location filename="../mconfig.cpp" line="485"/>
+=======
+        <location filename="../mconfig.cpp" line="460"/>
+        <location filename="../mconfig.cpp" line="483"/>
+>>>>>>> upstream/master
         <source>Panel settings</source>
         <translation>Настройки панели</translation>
     </message>
     <message>
-        <location filename="../mconfig.cpp" line="462"/>
-        <location filename="../mconfig.cpp" line="486"/>
+        <location filename="../mconfig.cpp" line="461"/>
+        <location filename="../mconfig.cpp" line="484"/>
         <source> Your current panel settings have been backed up in a hidden folder called .restore in your home folder (~/.restore/)</source>
         <translation> Ваши прежние настройки панели были сохранены в скрытой папке под названием .restore в вашей домашней папке (~/.restore/)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="506"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="502"/>
 >>>>>>> upstream/master
         <source>You must specify a &apos;copy to&apos; destination. You cannot copy to the desktop you are logged in to.</source>
         <translation>Вы должны указать место для копирования &apos;copy to&apos;. Вы не можете копировать на тот же рабочий стол, на который произведен вход.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="430"/>
 =======
         <location filename="../mconfig.cpp" line="510"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="506"/>
 >>>>>>> upstream/master
         <source>Before copying, close all other applications. Be sure the copy to destination is large enough to contain the files you are copying. Copying between desktops may overwrite or delete your files or preferences on the destination desktop. Are you sure you want to proceed?</source>
         <translation>Перед началом копирования закройте все другие приложения. Учтите, что копия будет достаточно большой, чтобы содержать файлы, которые вы копируете. Копирование между рабочими столами может перезаписать или удалить файлы или предпочтения на рабочем столе назначения. Вы уверены, что хотите продолжить?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="452"/>
 =======
         <location filename="../mconfig.cpp" line="532"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="528"/>
 >>>>>>> upstream/master
         <source>Synchronizing desktop...</source>
         <translation>Синхронизация рабочего стола...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="454"/>
 =======
         <location filename="../mconfig.cpp" line="534"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="530"/>
 >>>>>>> upstream/master
         <source>Copying desktop...</source>
         <translation>Копирование рабочего стола...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="477"/>
 =======
         <location filename="../mconfig.cpp" line="557"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="553"/>
 >>>>>>> upstream/master
         <source>The user name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Имя пользователя должно иметь не менее 2 символов. Пожалуйста, выберите более длинное название, прежде чем продолжить.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="481"/>
 =======
         <location filename="../mconfig.cpp" line="561"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="557"/>
 >>>>>>> upstream/master
         <source>The user name needs to be lower case and it
 cannot contain special characters or spaces.
@@ -180,90 +252,130 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="490"/>
 =======
         <location filename="../mconfig.cpp" line="570"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="566"/>
 >>>>>>> upstream/master
         <source>Sorry that name is in use. Please select a different name.</source>
         <translation>Извините, это имя уже используется. Пожалуйста, выберите другое имя.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="495"/>
 =======
         <location filename="../mconfig.cpp" line="575"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="571"/>
 >>>>>>> upstream/master
         <source>The user password entries do not match.  Please try again.</source>
         <translation>Записи пароля пользователя не совпадают. Пожалуйста, попробуйте еще раз.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="500"/>
 =======
         <location filename="../mconfig.cpp" line="580"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="576"/>
 >>>>>>> upstream/master
         <source>The user password needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Имя суперпользователя должно иметь не менее 2 символов. Пожалуйста, выберите более длинное название, прежде чем продолжить.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="528"/>
 =======
         <location filename="../mconfig.cpp" line="608"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="604"/>
 >>>>>>> upstream/master
         <source>The user was added ok.</source>
         <translation>Пользователь был успешно добавлен.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="532"/>
 =======
         <location filename="../mconfig.cpp" line="612"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="608"/>
 >>>>>>> upstream/master
         <source>Failed to add the user.</source>
         <translation>Не удалось добавить пользователя.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="537"/>
 =======
         <location filename="../mconfig.cpp" line="617"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="613"/>
 >>>>>>> upstream/master
         <source>This action cannot be undone. Are you sure you want to delete user %1?</source>
         <translation>Это действие не может быть отменено. Вы уверены, что хотите удалить пользователя %1?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="550"/>
 =======
         <location filename="../mconfig.cpp" line="630"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="626"/>
 >>>>>>> upstream/master
         <source>The user has been deleted.</source>
         <translation>Пользователь был удален.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="553"/>
 =======
         <location filename="../mconfig.cpp" line="633"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="629"/>
 >>>>>>> upstream/master
         <source>Failed to delete the user.</source>
         <translation>Не удалось удалить пользователя.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="566"/>
 =======
         <location filename="../mconfig.cpp" line="646"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="642"/>
 >>>>>>> upstream/master
         <source>The group name needs to be at least 2 characters long. Please select a longer name before proceeding.</source>
         <translation>Имя группы должно иметь не менее 2 символов. Пожалуйста, выберите более длинное название, прежде чем продолжить.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="570"/>
 =======
         <location filename="../mconfig.cpp" line="650"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="646"/>
 >>>>>>> upstream/master
         <source>The group name needs to be lower case and it 
 cannot contain special characters or spaces.
@@ -274,149 +386,214 @@ Please choose another name before proceeding.</source>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="579"/>
 =======
         <location filename="../mconfig.cpp" line="659"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="655"/>
 >>>>>>> upstream/master
         <source>Sorry that group name already exists. Please select a different name.</source>
         <translation>Извините, это имя группы уже используется. Пожалуйста, выберите другое имя.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="586"/>
 =======
         <location filename="../mconfig.cpp" line="666"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="662"/>
 >>>>>>> upstream/master
         <source>The system group was added ok.</source>
         <translation>Системная группа была успешно добавлена.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="589"/>
 =======
         <location filename="../mconfig.cpp" line="669"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="665"/>
 >>>>>>> upstream/master
         <source>Failed to add the system group.</source>
         <translation>Не удалось добавить системную группу.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="592"/>
 =======
         <location filename="../mconfig.cpp" line="672"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="668"/>
 >>>>>>> upstream/master
         <source>This action cannot be undone. Are you sure you want to delete group %1?</source>
         <translation>Это действие не может быть отменено. Вы уверены, что хотите удалить группу %1?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="599"/>
 =======
         <location filename="../mconfig.cpp" line="679"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="675"/>
 >>>>>>> upstream/master
         <source>The group has been deleted.</source>
         <translation>Группа была удалена.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="602"/>
 =======
         <location filename="../mconfig.cpp" line="682"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="678"/>
 >>>>>>> upstream/master
         <source>Failed to delete the group.</source>
         <translation>Не удалось удалить группу.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="620"/>
 =======
         <location filename="../mconfig.cpp" line="700"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="696"/>
 >>>>>>> upstream/master
         <source>Are you sure you want to make these changes?</source>
         <translation>Вы уверены, что хотите сделать эти изменения?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="626"/>
 =======
         <location filename="../mconfig.cpp" line="706"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="702"/>
 >>>>>>> upstream/master
         <source>The changes have been applied.</source>
         <translation>Изменения были применены.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="629"/>
 =======
         <location filename="../mconfig.cpp" line="709"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="705"/>
 >>>>>>> upstream/master
         <source>Failed to apply group changes</source>
         <translation>Не удалось применить изменения групп.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="713"/>
 =======
         <location filename="../mconfig.cpp" line="793"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="789"/>
 >>>>>>> upstream/master
         <source>Synchronizing desktop...ok</source>
         <translation>Синхронизация рабочего стола...ОК</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="715"/>
 =======
         <location filename="../mconfig.cpp" line="795"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="791"/>
 >>>>>>> upstream/master
         <source>Copying desktop...ok</source>
         <translation>Копирование рабочего стола...ОК</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="719"/>
 =======
         <location filename="../mconfig.cpp" line="799"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="795"/>
 >>>>>>> upstream/master
         <source>Synchronizing desktop...failed</source>
         <translation>Синхронизация рабочего стола...НЕ удалась</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="721"/>
 =======
         <location filename="../mconfig.cpp" line="801"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="797"/>
 >>>>>>> upstream/master
         <source>Copying desktop...failed</source>
         <translation>Копирование рабочего стола...НЕ удалось</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="905"/>
 =======
         <location filename="../mconfig.cpp" line="1006"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="1002"/>
 >>>>>>> upstream/master
         <source>Baobab installation</source>
         <translation>Установка программы Baobab</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="906"/>
 =======
         <location filename="../mconfig.cpp" line="1007"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="1003"/>
 >>>>>>> upstream/master
         <source>Wait while Baobab is installing...</source>
         <translation>Ожидайте, пока Baobab устанавливается...</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="973"/>
 =======
         <location filename="../mconfig.cpp" line="1074"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="1071"/>
 >>>>>>> upstream/master
         <source>About MX User Manager</source>
         <translation>О программе MX Менеджер пользователей</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../mconfig.cpp" line="974"/>
         <location filename="../mconfig.cpp" line="981"/>
@@ -426,10 +603,16 @@ Please choose another name before proceeding.</source>
         <location filename="../mconfig.cpp" line="1082"/>
         <location filename="../mconfig.cpp" line="1087"/>
 >>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="1072"/>
+        <location filename="../mconfig.cpp" line="1079"/>
+        <location filename="../mconfig.cpp" line="1086"/>
+>>>>>>> upstream/master
         <source>MX User Manager</source>
         <translation>MX Менеджер пользователей</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../mconfig.cpp" line="976"/>
 =======
@@ -455,23 +638,45 @@ Please choose another name before proceeding.</source>
         <location filename="../mconfig.cpp" line="1079"/>
         <location filename="../mconfig.cpp" line="1082"/>
 >>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="1074"/>
+        <source>Simple user configuration for MX Linux</source>
+        <translation>Простая конфигурация пользователей для MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1075"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation>Авторское право (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mconfig.cpp" line="1076"/>
+        <location filename="../mconfig.cpp" line="1079"/>
+>>>>>>> upstream/master
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="979"/>
 =======
         <location filename="../mconfig.cpp" line="1080"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="1077"/>
 >>>>>>> upstream/master
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../mconfig.cpp" line="986"/>
 =======
         <location filename="../mconfig.cpp" line="1087"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../mconfig.cpp" line="1086"/>
 >>>>>>> upstream/master
         <source>Help</source>
         <translation>Помощь</translation>
